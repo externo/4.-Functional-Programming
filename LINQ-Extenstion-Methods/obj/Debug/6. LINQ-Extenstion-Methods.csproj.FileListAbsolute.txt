@@ -1,1 +1,0 @@
-F:\VisualStudio\C#\4. Functional-Programming\LINQ-Extenstion-Methods\bin\Debug\LINQ-Extenstion-Methods.exe.config

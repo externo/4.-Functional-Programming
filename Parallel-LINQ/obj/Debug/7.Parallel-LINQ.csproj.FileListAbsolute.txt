@@ -1,1 +1,0 @@
-F:\VisualStudio\C#\4. Functional-Programming\Parallel-LINQ\bin\Debug\Parallel-LINQ.exe.config
