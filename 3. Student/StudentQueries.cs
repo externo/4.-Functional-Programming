@@ -78,6 +78,38 @@ namespace _3.Student
                     "Ruse",
                     new List<int>() { 6, 6, 6, 6, 6, 5, 6, 6 })
             };
+            List<StudentSpecialty> specialtyList = new List<StudentSpecialty> 
+            {
+                new StudentSpecialty(
+                    "Web Developer",
+                    "800014"
+                    ),
+
+                new StudentSpecialty(
+                    "Web Developer",
+                    "850014"
+                    ),
+            
+                new StudentSpecialty(
+                    "PHP Developer",
+                    "734015"
+                    ),
+
+                new StudentSpecialty(
+                    "PHP Developer",
+                    "023016"
+                    ),
+
+                new StudentSpecialty(
+                    "C# Developer",
+                    "800014"
+                    ),
+
+                new StudentSpecialty(
+                    "Java Developer",
+                    "851014"
+                    )
+            };
             Console.WriteLine();
             var orderedStudents = 
                 from s in studentList
@@ -190,6 +222,40 @@ namespace _3.Student
 	            }
                 Console.WriteLine();
             }
+            Console.WriteLine();
+            var groupsLAMBDA = studentList.GroupBy(s => s.GroupNumber);
+            foreach (var group in groupsLAMBDA)
+            {
+                Console.WriteLine("LAMBDAgroup:   " + group.Key);
+                foreach (var i in group)
+                {
+                    Console.WriteLine(" " + i);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+            var studentFacs =
+                from s in studentList
+                select new { Name = s.FirstName + " " + s.LastName, FN = s.FacultyNumber };
+            var specialtyFacs =
+                from f in specialtyList
+                select new { Specialty = f.Specialty, FN = f.FacultyNumber };
+            var join =
+                from s in studentFacs
+                join f in specialtyFacs on s.FN equals f.FN into newGroup
+                select new { Name = s.Name, Specialty = newGroup };
+            foreach (var item in join)
+            {
+                Console.Write(item.Name + "  ");
+                foreach (var i in item.Specialty)
+	            {
+		            Console.Write(i.FN+"  "+i.Specialty);
+	            }
+                Console.WriteLine();
+            }
+            //from category in categories
+            //join prod in products on category.ID equals prod.CategoryID into prodGroup
+            //select new { CategoryName = category.Name, Products = prodGroup };
         }
     }
 
@@ -245,5 +311,17 @@ namespace _3.Student
                 "Has "+this.FacultyNumber+"fac.N and phone: "+this.Phone+" and e-mail: "+this.Email+
                 ". Marks are - "+this.Marks+" and the group number is "+ this.GroupNumber;
         }
+    }
+
+    class StudentSpecialty
+    {
+        public StudentSpecialty(string specialty, string facultyNumber)
+        {
+            this.Specialty = specialty;
+            this.FacultyNumber = facultyNumber;
+        }
+
+        public string Specialty { get; set; }
+        public string FacultyNumber { get; set; }
     }
 }

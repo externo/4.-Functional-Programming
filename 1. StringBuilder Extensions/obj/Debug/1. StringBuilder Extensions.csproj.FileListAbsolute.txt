@@ -4,3 +4,6 @@ F:\Downloads\4. Functional-Programming-Demos\1. StringBuilder Extensions\bin\Deb
 F:\Downloads\4. Functional-Programming-Demos\1. StringBuilder Extensions\bin\Debug\_1.StringBuilder_Extensions.pdb
 F:\Downloads\4. Functional-Programming-Demos\1. StringBuilder Extensions\obj\Debug\_1.StringBuilder_Extensions.exe
 F:\Downloads\4. Functional-Programming-Demos\1. StringBuilder Extensions\obj\Debug\_1.StringBuilder_Extensions.pdb
+F:\VisualStudio\C#\4. Functional-Programming\1. StringBuilder Extensions\bin\Debug\_1.StringBuilder_Extensions.exe.config
+F:\VisualStudio\C#\4. Functional-Programming\1. StringBuilder Extensions\obj\Debug\_1.StringBuilder_Extensions.exe
+F:\VisualStudio\C#\4. Functional-Programming\1. StringBuilder Extensions\obj\Debug\_1.StringBuilder_Extensions.pdb

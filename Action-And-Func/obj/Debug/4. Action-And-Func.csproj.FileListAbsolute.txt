@@ -1,0 +1,1 @@
+F:\VisualStudio\C#\4. Functional-Programming\Action-And-Func\bin\Debug\Action-And-Func.exe.config

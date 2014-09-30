@@ -10,3 +10,9 @@ E:\Visual Studio\Csharp\4.-Functional-Programming\3. Student\obj\Debug\_3.Studen
 E:\Visual Studio\Csharp\4.-Functional-Programming\3. Student\bin\Debug\_3.Student.exe
 E:\Visual Studio\Csharp\4.-Functional-Programming\3. Student\bin\Debug\_3.Student.pdb
 E:\Visual Studio\Csharp\4.-Functional-Programming\3. Student\obj\Debug\3. Student.csprojResolveAssemblyReference.cache
+F:\VisualStudio\C#\4. Functional-Programming\3. Student\bin\Debug\_3.Student.exe.config
+F:\VisualStudio\C#\4. Functional-Programming\3. Student\obj\Debug\_3.Student.exe
+F:\VisualStudio\C#\4. Functional-Programming\3. Student\obj\Debug\_3.Student.pdb
+F:\VisualStudio\C#\4. Functional-Programming\3. Student\bin\Debug\_3.Student.exe
+F:\VisualStudio\C#\4. Functional-Programming\3. Student\bin\Debug\_3.Student.pdb
+F:\VisualStudio\C#\4. Functional-Programming\3. Student\obj\Debug\3. Student.csprojResolveAssemblyReference.cache
