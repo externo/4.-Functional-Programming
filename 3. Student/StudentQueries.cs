@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _3.Student
 {
-    class Program
+    class StudentQueries
     {
         static void Main(string[] args)
         {
@@ -106,7 +106,90 @@ namespace _3.Student
                 Console.WriteLine(item);
             }
             Console.WriteLine();
-
+            var orderByName = studentList.OrderByDescending(s => s.FirstName).ThenByDescending(s => s.LastName);
+            foreach (var item in orderByName)
+            {
+                Console.WriteLine("reverse order by first and last name: "+item);
+            }
+            Console.WriteLine();
+            var orderByNameQuery =
+                from s in studentList
+                orderby s.FirstName descending, s.LastName descending
+                select s;
+            //var ln = from s in orderByNameQuery
+            //         orderby s.LastName descending
+            //         select s;
+            foreach (var i in orderByNameQuery)
+            {
+                Console.WriteLine("QUERY reverse order by first and last name: " + i);
+            }
+            Console.WriteLine();
+            var abvStudents =
+                from s in studentList
+                where s.Email.EndsWith("@abv.bg")
+                select s;
+            foreach (var i in abvStudents)
+            {
+                Console.WriteLine("ABV: " + i);
+            }
+            Console.WriteLine();
+            //02 / +3592 / +359 2
+            var sofiaCodes = new[]{"02", "+3592", "+359 2"};
+            var sofiaStudents =
+                from s in studentList
+                from c in sofiaCodes
+                where s.Phone.StartsWith(c)
+                select s;
+            foreach (var i in sofiaStudents)
+            {
+                Console.WriteLine("sofiaCODE: " + i);
+            }
+            Console.WriteLine();
+            var excellentStudents =
+                from s in studentList
+                where s.Marks.Contains(6)
+                select new { FullName = s.FirstName + s.LastName, Marks = s.Marks };
+            foreach (var i in excellentStudents)
+            {
+                Console.WriteLine("6 mark: " + i.ToString());
+            }
+            Console.WriteLine();
+            var weakStudents =
+                from s in studentList
+                where s.Marks.Where(m => m == 2).Count() == 2
+                select s;
+            foreach (var i in weakStudents)
+            {
+                Console.WriteLine("2 mark: " + i.ToString());
+            }
+            Console.WriteLine();
+            var students2014 =
+                from s in studentList
+                where s.FacultyNumber.Substring(4, 2) == "14"
+                select s.Marks;
+            foreach (var marks in students2014)
+            {
+                Console.Write("marks: ");
+                foreach (var m in marks)
+                {
+                    Console.Write(m+" ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+            var groups =
+                from s in studentList
+                group s by s.GroupNumber into gs
+                select new { GroupName = gs.Key, Students = gs };
+            foreach (var group in groups)
+            {
+                Console.WriteLine("group:   "+group.GroupName);
+                foreach (var i in group.Students)
+	            {
+		            Console.WriteLine(" "+i);
+	            }
+                Console.WriteLine();
+            }
         }
     }
 

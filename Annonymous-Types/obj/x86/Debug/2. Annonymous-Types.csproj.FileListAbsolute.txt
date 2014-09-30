@@ -3,3 +3,5 @@ F:\Downloads\4. Functional-Programming-Demos\Annonymous-Types\bin\Debug\Annonymo
 F:\Downloads\4. Functional-Programming-Demos\Annonymous-Types\obj\x86\Debug\2. Annonymous-Types.csprojResolveAssemblyReference.cache
 F:\Downloads\4. Functional-Programming-Demos\Annonymous-Types\obj\x86\Debug\Annonymous-Types.exe
 F:\Downloads\4. Functional-Programming-Demos\Annonymous-Types\obj\x86\Debug\Annonymous-Types.pdb
+E:\Visual Studio\Csharp\4.-Functional-Programming\Annonymous-Types\obj\x86\Debug\Annonymous-Types.exe
+E:\Visual Studio\Csharp\4.-Functional-Programming\Annonymous-Types\obj\x86\Debug\Annonymous-Types.pdb
