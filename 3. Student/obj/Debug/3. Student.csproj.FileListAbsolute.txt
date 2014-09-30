@@ -1,0 +1,6 @@
+F:\Downloads\4. Functional-Programming-Demos\3. Student\bin\Debug\_3.Student.exe.config
+F:\Downloads\4. Functional-Programming-Demos\3. Student\bin\Debug\_3.Student.exe
+F:\Downloads\4. Functional-Programming-Demos\3. Student\bin\Debug\_3.Student.pdb
+F:\Downloads\4. Functional-Programming-Demos\3. Student\obj\Debug\3. Student.csprojResolveAssemblyReference.cache
+F:\Downloads\4. Functional-Programming-Demos\3. Student\obj\Debug\_3.Student.exe
+F:\Downloads\4. Functional-Programming-Demos\3. Student\obj\Debug\_3.Student.pdb
